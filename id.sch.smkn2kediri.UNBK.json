@@ -1,0 +1,49 @@
+{
+  "id" : "id.sch.smkn2kediri.UNBK",
+  "branch" : "stable",
+  "runtime" : "org.freedesktop.Platform",
+  "runtime-version" : "1.6",
+  "sdk" : "org.freedesktop.Sdk",
+  "base" : "io.atom.electron.BaseApp",
+  "command" : "exambrowser",
+  "finish-args" : [
+    "--socket=x11",
+    "--share=ipc",
+    "--device=dri",
+    "--share=network",
+    "--talk-name=org.freedesktop.Notifications"
+  ],
+ "modules": [
+    {
+      "name": "UBNK",
+      "no-autogen": true,
+      "sources": [
+        {
+          "type": "archive",
+          "url": "http://elearning.smkn2kediri.sch.id/repository/MASTER_SOFTWARE/MASTER_UNBK/unbk2017simulasi2/exambrowser-linux-x64_170201.zip",
+          "sha256": "8f2aa2efe477a743739caf9a431575646309d5645081e534bdd862456b201904"
+        },
+        {
+          "type": "file",
+          "path": "makefile",
+          "dest-filename": "Makefile"
+        },
+        {
+          "type": "file",
+          "path": "id.sch.smkn2kediri.UNBK.png",
+          "dest-filename": "id.sch.smkn2kediri.UNBK.png"
+        },
+        {
+          "type": "file",
+          "path": "id.sch.smkn2kediri.UNBK.desktop",
+          "dest-filename": "id.sch.smkn2kediri.UNBK.desktop"
+        },
+        {
+          "type": "file",
+          "path": "id.sch.smkn2kediri.UNBK.appdata.xml",
+          "dest-filename": "id.sch.smkn2kediri.UNBK.appdata.xml"
+        }
+      ]
+    }
+  ]
+}
