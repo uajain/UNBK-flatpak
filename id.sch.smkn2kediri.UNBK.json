@@ -16,7 +16,19 @@
  "modules": [
     {
       "name": "UBNK",
-      "no-autogen": true,
+      "buildsystem": "simple",
+      "build-commands":[
+        "mkdir -p /app/UBNK /app/bin",
+        "cp -ra * /app/UBNK",
+        "ln -s /app/UBNK/exambrowser /app/bin",
+        "mkdir -p /app/share/applications",
+        "cp id.sch.smkn2kediri.UNBK.desktop /app/share/applications",
+        "mkdir -p /app/share/icons/hicolor/128x128/apps /app/share/icons/hicolor/64x64/apps",
+        "cp icon.128x128.png /app/share/icons/hicolor/128x128/apps/id.sch.smkn2kediri.UNBK.png",
+        "cp icon.64x64.png /app/share/icons/hicolor/64x64/apps/id.sch.smkn2kediri.UNBK.png",
+        "mkdir -p /app/share/appdata",
+        "cp id.sch.smkn2kediri.UNBK.appdata.xml /app/share/appdata/"
+      ],
       "sources": [
         {
           "type": "archive",
@@ -25,13 +37,13 @@
         },
         {
           "type": "file",
-          "path": "makefile",
-          "dest-filename": "Makefile"
+          "path": "icon.128x128.png",
+          "dest-filename": "icon.128x128.png"
         },
         {
           "type": "file",
-          "path": "id.sch.smkn2kediri.UNBK.png",
-          "dest-filename": "id.sch.smkn2kediri.UNBK.png"
+          "path": "icon.64x64.png",
+          "dest-filename": "icon.64x64.png"
         },
         {
           "type": "file",

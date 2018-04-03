@@ -5,5 +5,5 @@ GenericName=Indonesian Exam Browser
 Comment=Indonesian Exam Browser
 Exec=exambrowser
 Icon=id.sch.smkn2kediri.UNBK
-Categories=Utilities;WebBrowser;
+Categories=Utility;Education;
 
